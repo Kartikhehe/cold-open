@@ -1,0 +1,27 @@
+# Confidential: master prompt quotes show details; the pack belongs to Kuku
+PROMPT.md
+data/
+runs/
+.cache/
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Frontend
+web/node_modules/
+web/dist/
+node_modules/
+
+.DS_Store
+
+# Filled solution doc and submission bundle quote the client's scripts
+docs/solution_doc.*
+raw_outputs.zip
+examples/**/runs/

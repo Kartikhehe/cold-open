@@ -1,0 +1,16 @@
+# Cold Open configuration. Swapping a model is a one-line change under `models`.
+# Run `coldopen models` to see the exact model names your keys can use.
+models:
+  miner: "gemini/TODO-flash-model"       # proposes candidates, builds bible
+  judge: "groq/TODO-llama-model"         # cold viewer; different family on purpose
+  classifier: "gemini/TODO-flash-lite"   # lexicon, grader, risk
+temperature: { miner: 0.4, judge: 0.7, classifier: 0.0 }
+concurrency: 2
+rpm: 10
+paywall_episode: 10
+fps: 30
+weights: { hook: 0.25, cliff: 0.20, viewer: 0.25, tension: 0.15, quality: 0.15 }
+penalties: { review: 0.05, organic_only: 0.15, spoiler: 0.10, paywall: 0.10, referent: 0.03, referent_cap: 0.09 }
+mmr_lambda: 0.7
+slate: { challengers: 4, bench: 10 }
+judge_limit: null    # e.g. 40 on a slow free tier: only the top-N valid promos get Cold Viewer + risk calls

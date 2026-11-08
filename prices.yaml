@@ -1,0 +1,7 @@
+# USD per 1M tokens, copied by hand from each provider's pricing page.
+# Leave a value as TODO when unknown: cost is then reported as null, never guessed.
+# free_tier: true -> the cost shown is a "list-price equivalent", not money spent.
+models:
+  "gemini/TODO-flash-model":  { input_per_m: TODO, output_per_m: TODO, free_tier: true, source: "TODO pricing URL + date" }
+  "groq/TODO-llama-model":    { input_per_m: TODO, output_per_m: TODO, free_tier: true, source: "TODO pricing URL + date" }
+  "gemini/TODO-flash-lite":   { input_per_m: TODO, output_per_m: TODO, free_tier: true, source: "TODO pricing URL + date" }
